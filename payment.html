@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aatu Zhatu | Payment</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+<header>
+  <div class="logo">Aatu<span>Zhatu</span></div>
+  <nav><a href="index.html">Home</a><a href="content.html">Products</a><a href="cart.html">Cart <span id="cartCount">0</span></a></nav>
+</header>
+
+<main>
+  <div class="heading"><p class="tag">SECURE CHECKOUT</p><h1>Complete your order</h1><p>Enter your details and choose a payment method.</p></div>
+  <section class="payment-layout">
+    <form class="payment-form" id="paymentForm">
+      <h2>Delivery Details</h2>
+      <div class="two"><label>First Name<input required type="text" placeholder="Kartik"></label><label>Last Name<input required type="text" placeholder="Parvatia"></label></div>
+      <label>Email<input required type="email" placeholder="you@example.com"></label>
+      <label>Address<input required type="text" placeholder="House / Street / Area"></label>
+      <div class="two"><label>City<input required type="text" placeholder="Ahmedabad"></label><label>PIN Code<input required pattern="[0-9]{6}" placeholder="380001"></label></div>
+
+      <h2 class="pay-title">Payment Method</h2>
+      <div class="methods">
+        <label class="method"><input type="radio" name="method" value="card" checked> 💳 Card</label>
+        <label class="method"><input type="radio" name="method" value="upi"> 📱 UPI</label>
+        <label class="method"><input type="radio" name="method" value="cod"> 📦 Cash on Delivery</label>
+      </div>
+
+      <div id="cardFields">
+        <label>Card Number<input type="text" inputmode="numeric" maxlength="19" placeholder="1234 5678 9012 3456"></label>
+        <div class="two"><label>Expiry<input placeholder="MM/YY"></label><label>CVV<input type="password" maxlength="3" placeholder="•••"></label></div>
+      </div>
+
+      <button class="pay-btn" type="submit">Pay <span id="payAmount">₹0</span> →</button>
+    </form>
+
+    <aside class="order">
+      <h2>Your Order</h2>
+      <div id="paymentItems"></div>
+      <hr>
+      <div class="order-total"><span>Total</span><b id="paymentTotal">₹0</b></div>
+    </aside>
+  </section>
+</main>
+
+<script src="shop.js"></script>
+<script>
+  renderPayment();
+  document.querySelectorAll('input[name="method"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      document.getElementById('cardFields').style.display =
+        radio.value === 'card' && radio.checked ? 'block' : 'none';
+    });
+  });
+  document.getElementById('paymentForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Order placed successfully! Thank you for shopping with Aatu Zhatu.');
+    localStorage.removeItem('az_cart');
+    window.location.href = 'index.html';
+  });
+</script>
+</body>
+</html>
