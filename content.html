@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aatu Zhatu | Products</title>
+  <link rel="stylesheet" href="content.css">
+</head>
+<body>
+<header>
+  <div class="logo">Aatu<span>Zhatu</span></div>
+  <nav><a href="index.html">Home</a><a class="active" href="content.html">Products</a><a href="cart.html">Cart <span id="cartCount">0</span></a></nav>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="tag">OUR COLLECTION</p>
+    <h1>Find something <span>you'll love.</span></h1>
+    <p>Browse our collection and add products directly to your cart.</p>
+  </section>
+
+  <section class="catalog">
+    <div class="filter">
+      <button class="active" onclick="filterProducts('all',this)">All</button>
+      <button onclick="filterProducts('tech',this)">Technology</button>
+      <button onclick="filterProducts('fashion',this)">Fashion</button>
+      <button onclick="filterProducts('home',this)">Home</button>
+    </div>
+    <div class="product-grid" id="catalog"></div>
+  </section>
+</main>
+
+<footer>© 2026 Aatu Zhatu</footer>
+<script src="shop.js"></script>
+<script>
+  renderProducts("catalog", products);
+  updateCartCount();
+</script>
+</body>
+</html>
