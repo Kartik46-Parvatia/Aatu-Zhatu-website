@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aatu Zhatu | Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+<header>
+  <div class="logo">Aatu<span>Zhatu</span></div>
+  <nav><a href="index.html">Home</a><a href="content.html">Products</a><a class="active" href="cart.html">Cart <span id="cartCount">0</span></a></nav>
+</header>
+
+<main>
+  <div class="heading"><p class="tag">YOUR SHOPPING BAG</p><h1>Shopping Cart</h1><p>Review your items before payment.</p></div>
+  <section class="cart-layout">
+    <div class="cart-list" id="cartList"></div>
+    <aside class="summary">
+      <h2>Order Summary</h2>
+      <div><span>Subtotal</span><b id="subtotal">₹0</b></div>
+      <div><span>Delivery</span><b>Free</b></div>
+      <hr>
+      <div class="total"><span>Total</span><b id="total">₹0</b></div>
+      <a class="checkout" href="payment.html">Proceed to Payment →</a>
+      <a class="continue" href="content.html">← Continue Shopping</a>
+    </aside>
+  </section>
+</main>
+
+<script src="shop.js"></script>
+<script>
+  renderCart();
+</script>
+</body>
+</html>
