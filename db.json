@@ -13,7 +13,7 @@
       "badge": "Bestseller",
       "rating": 4.8,
       "reviewCount": 342,
-      "stock": 20,
+      "stock": 21,
       "features": [
         "1.43\" AMOLED Display with Always-On support",
         "SpO2, Heart Rate & Sleep Monitoring",
@@ -168,9 +168,9 @@
       "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
       "desc": "Handcrafted matte finish stoneware ceramic mug with ergonomic heat-insulated handle (350ml).",
       "badge": "Top Value",
-      "rating": 5,
-      "reviewCount": 2,
-      "stock": 39,
+      "rating": 4.9,
+      "reviewCount": 95,
+      "stock": 40,
       "features": [
         "100% Lead-free & food-grade ceramic",
         "Microwave and dishwasher safe",
@@ -178,13 +178,6 @@
         "Smooth artisanal matte glaze finish"
       ],
       "reviews": [
-        {
-          "id": 2,
-          "user": "Verified Buyer",
-          "rating": 5,
-          "date": "2026-10-03",
-          "comment": "erngrklbnet"
-        },
         {
           "id": 1,
           "user": "Ananya Joshi",
@@ -207,7 +200,7 @@
       "badge": "Gamer Favorite",
       "rating": 4.9,
       "reviewCount": 420,
-      "stock": 11,
+      "stock": 12,
       "features": [
         "Tactile Clicky Blue Switches (50M keystroke rating)",
         "18 vibrant customizable RGB backlight modes",
@@ -237,7 +230,7 @@
       "badge": "Health Pick",
       "rating": 4.7,
       "reviewCount": 168,
-      "stock": 18,
+      "stock": 19,
       "features": [
         "Natural 57° handshake angle reduces wrist strain",
         "Adjustable DPI (800 / 1200 / 1600 / 2400)",
@@ -376,99 +369,6 @@
     }
   ],
   "orders": [
-    {
-      "id": "AZ-97903",
-      "date": "2026-10-03T11:40:12.923Z",
-      "customer": {
-        "name": "Kartik Parvatia",
-        "email": "parvatiakartik@gmail.com",
-        "phone": "9876543210",
-        "address": "42 MG Road, Navrangpura",
-        "city": "Ahmedabad",
-        "state": "Gujarat",
-        "pincode": "380009"
-      },
-      "items": [
-        {
-          "id": 1,
-          "name": "Aatu Smart Watch Pro",
-          "price": 499,
-          "qty": 1,
-          "icon": "⌚",
-          "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=80"
-        },
-        {
-          "id": 8,
-          "name": "Zenith Comfort Ergonomic Mouse",
-          "price": 549,
-          "qty": 1,
-          "icon": "🖱️",
-          "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=600&auto=format&fit=crop&q=80"
-        },
-        {
-          "id": 7,
-          "name": "CyberKeys RGB Mechanical Keyboard",
-          "price": 1299,
-          "qty": 1,
-          "icon": "⌨️",
-          "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=600&auto=format&fit=crop&q=80"
-        },
-        {
-          "id": 6,
-          "name": "Artisan Ceramic Coffee Mug Set",
-          "price": 249,
-          "qty": 1,
-          "icon": "☕",
-          "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80"
-        }
-      ],
-      "pricing": {
-        "subtotal": 2596,
-        "discount": 12980,
-        "coupon": "AATU20",
-        "shipping": 0,
-        "tax": -519,
-        "total": 0
-      },
-      "payment": {
-        "method": "cod",
-        "status": "completed",
-        "transactionId": "TXN-1791027612923"
-      },
-      "status": "delivered",
-      "timeline": [
-        {
-          "status": "placed",
-          "title": "Order Placed & Verified",
-          "time": "2026-10-03T11:40:12.923Z",
-          "completed": true
-        },
-        {
-          "status": "processing",
-          "title": "Packing at Aatu Zhatu Fulfillment Hub",
-          "time": "2026-10-03T11:40:33.917Z",
-          "completed": true
-        },
-        {
-          "status": "shipped",
-          "title": "Dispatched with Courier Partner",
-          "time": "2026-10-03T11:40:43.273Z",
-          "completed": true
-        },
-        {
-          "status": "out_for_delivery",
-          "title": "Out for Delivery",
-          "time": "2026-10-03T11:40:43.273Z",
-          "completed": true
-        },
-        {
-          "status": "delivered",
-          "title": "Delivered",
-          "time": "2026-10-03T11:40:50.025Z",
-          "completed": true
-        }
-      ]
-    },
     {
       "id": "AZ-54524",
       "date": "2026-10-03T09:53:31.845Z",

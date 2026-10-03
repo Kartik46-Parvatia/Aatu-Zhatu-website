@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aatu Zhatu | Home</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Aatu<span>Zhatu</span></div>
+    <nav>
+      <a href="landing.html">Home</a>
+      <a href="content.html">Products</a>
+      <a href="cart.html">Cart <span id="cartCount">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="tag">SMART SHOPPING • SIMPLE LIFE</p>
+        <h1>Everything you need,<br><span>all in one place.</span></h1>
+        <p>Discover useful products, great prices and a smooth shopping experience with Aatu Zhatu.</p>
+        <a class="btn" href="content.html">Shop Now →</a>
+      </div>
+      <div class="hero-card">
+        <div class="circle">AZ</div>
+        <h3>Fresh Deals</h3>
+        <p>Quality products at prices you'll love.</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div><b>🚚 Fast Delivery</b><small>Quick and reliable shipping</small></div>
+      <div><b>🔒 Secure Payment</b><small>Safe checkout experience</small></div>
+      <div><b>↩ Easy Returns</b><small>Simple return process</small></div>
+    </section>
+
+    <section class="featured">
+      <div class="section-title">
+        <div><p class="tag">POPULAR NOW</p><h2>Featured Products</h2></div>
+        <a href="content.html">View all →</a>
+      </div>
+      <div class="product-grid" id="featuredProducts"></div>
+    </section>
+  </main>
+
+  <footer>© 2026 Aatu Zhatu • Your everyday ecommerce store</footer>
+
+  <script src="shop.js"></script>
+  <script>
+    renderProducts("featuredProducts", products.slice(0, 3));
+    updateCartCount();
+  </script>
+</body>
+</html>
