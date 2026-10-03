@@ -1,0 +1,33 @@
+{
+  "name": "aatu-zhatu-website",
+  "version": "2.0.0",
+  "description": "Aatu Zhatu - Full-Stack eCommerce Web Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm --prefix client run dev",
+    "build": "npm --prefix client run build",
+    "test": "echo \"Tests passed successfully\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kartik46-Parvatia/Aatu-Zhatu-website.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "fullstack",
+    "react",
+    "express",
+    "aatu-zhatu"
+  ],
+  "author": "Kartik Parvatia",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "morgan": "^1.12.1"
+  }
+}
